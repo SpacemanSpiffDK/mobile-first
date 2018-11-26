@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 4vw;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+main img {
+    max-width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+}
+
+#logo {
+    background-color: #2ecc71;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Black Han Sans', sans-serif;
+    display: inline-block;
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    transform: rotate(270deg);
+}
+
+#logo span {
+    position: absolute;
+    bottom: -.2vw;
+    left: 0;
+    opacity: .5;
+}
+
+.background-image-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.name-hero {
+    background-image: url(../images/2.jpg);
+    height: 100vh;
+    position: relative;
+}
+
+.name-hero h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.center-header h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dymo-header h1,
+.dymo-header h2 {
+    padding: 2vw 6vw;
+    color: rgba(255, 255, 255, .8);
+    background-color: rgba(0, 0, 0, .5);
+    text-transform: uppercase;
+}
+
+.name-orbit {
+    background-image: url(../images/1.jpg);
+    height: 50vh;
+    position: relative;
+}
+
+.name-moon {
+    background-image: url(../images/3.jpg);
+    height: 50vh;
+    position: relative;
+}
+
+.name-mars {
+    background-image: url(../images/4.jpg);
+    height: 50vh;
+    position: relative;
+}
+
+.name-saturn {
+    background-image: url(../images/5.jpg);
+    height: 50vh;
+    position: relative;
+}
+
+.name-hero {
+    grid-area: hero;
+}
+
+.name-orbit {
+    grid-area: orbit;
+}
+
+.name-moon {
+    grid-area: moon;
+}
+
+.name-mars {
+    grid-area: mars;
+}
+
+.name-saturn {
+    grid-area: saturn;
+}
+
+footer {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 4vw;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+.footer-layout-div+.footer-layout-div {
+    margin-top: 20px;
+}
+
+
+/* 
+	navigation for mobile
+	remember to reset all this for desktop
+*/
+
+.nav-active #menu-btn {
+    opacity: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    width: 100vw;
+    height: 100vh;
+    background-color: #e74c3c;
+    transition: all .3s ease-out;
+    opacity: .5;
+    padding-top: 15vw;
+}
+
+.nav-active nav {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#menu-btn {
+    transition: opacity .3s ease-out;
+}
+
+#menu-btn,
+#menu-btn-close {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15vw;
+    height: 15vw;
+    background-color: #e67e22;
+    color: #fff;
+    display: inline-block;
+}
+
+#menu-btn span,
+#menu-btn-close span {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+}
+
+#menu-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85vw;
+    height: 15vw;
+    background-color: #f39c12;
+    line-height: 15vw;
+    padding-left: 5vw;
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: block;
+    list-style-type: none;
+    border-bottom: 2px solid #f39c12;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5vw;
+
+}
+
+/* some style for the sub-page */
+
+.sub-page main {
+    padding: 20vw 2vw 5vw 2vw;
+}
+
+.sub-page main h1 {
+    margin: 2vw 0;
+}
+
+/* style for tablet (portrait) */
+@media screen and (min-width: 768px) {
+    /* hide menu button on all other devices than mobile */
+    #menu-btn {
+        display: none;
+    }
+
+    /* make sure text-sizes don't explode on larger screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* make exceptions for headers */
+    h1 {
+        font-size: 4vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+
+    /* logo gets a fixed size from here on */
+    #logo {
+        width: 150px;
+        height: 150px;
+        font-size: 37.5px;
+    }
+
+    #logo span {
+        bottom: -2px;
+    }
+
+    /* hero header moved to exact center */
+    .name-hero h1 {
+        transform: translate(-50%, -50%);
+    }
+
+    .name-hero {
+        height: 75vh;
+    }
+
+    .name-orbit {
+        height: 50vh;
+    }
+
+    .name-moon {
+        height: 25vh;
+    }
+
+    .name-mars {
+        height: 50vh;
+    }
+
+    .name-saturn {
+        height: 25vh;
+    }
+
+
+    /* switch positions in grid */
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'hero hero hero'
+            'orbit moon mars'
+            'orbit saturn mars';
+    }
+
+    .footer-layout-div+.footer-layout-div {
+        margin-top: 0;
+        padding-left: 4vw;
+    }
+
+    .footer-layout-div {
+        width: 50%;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    /* some style for the sub-page */
+    .sub-page main {
+        padding: 200px 4vw 5vw 4vw;
+    }
+
+    .text-block {
+        column-count: 2;
+    }
+
+    .text-block p:first-child {
+        margin-top: 0;
+    }
+
+    .sub-page main h1 {
+        margin: 2vw 0;
+    }
+
+    /* navigation for tablet and upwards */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 150px;
+        transform: translateX(0);
+        width: calc(100vw - 150px);
+        height: auto;
+        background-color: #e74c3c;
+        transition: none;
+        opacity: 1;
+        padding-top: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        list-style-type: none;
+        border-bottom: none;
+    }
+
+    nav li a {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        padding: 30px;
+
+    }
+
+    nav li a:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    #menu-btn-close,
+    #menu-header {
+        display: none;
+    }
+}
+
+/* style for tablet (landscape) */
+@media screen and (min-width: 1024px) {
+    /* new height for all grid-items */
+    .grid-item {
+        height: 25vh;
+    }
+
+    /* new height for the hero grid-item */
+    .grid-item.name-hero {
+        height: 75vh;
+    }
+
+    /* switch positions in grid */
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'hero hero hero hero'
+            'orbit moon mars saturn';
+    }
+
+    /* some resizing of the grid h2s */
+    .grid-item h2 {
+        font-size: 2vw;
+        padding: 2vw 4vw;
+    }
+
+    /* some style for the sub-page */
+    .text-block {
+        column-count: 3;
+    }
+}
+
+/* styles for medium sized screens */
+@media screen and (min-width: 1200px) {
+    /* new height for all grid-items */
+    .grid-item {
+        height: 33.3333vh;
+    }
+
+    /* new height for the hero grid-item */
+    .grid-item.name-hero {
+        height: 66.6666vh;
+    }
+
+    /* switch positions in grid */
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'hero hero hero orbit'
+            'hero hero hero moon'
+            'mars mars saturn saturn';
+    }
+
+    /* some style for the sub-page */
+    .text-block {
+        column-count: 4;
+    }
+}
+
+/* styles for large sized screens */
+@media screen and (min-width: 1600px) {
+    .site-width {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    /* new height for all grid-items */
+    .grid-item {
+        height: 25vh;
+    }
+
+    /* new height for the hero grid-item */
+    .grid-item.name-hero {
+        height: 100vh;
+    }
+
+    /* switch positions in grid */
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+            'hero hero hero orbit'
+            'hero hero hero moon'
+            'hero hero hero mars'
+            'hero hero hero saturn'
+    }
+}
