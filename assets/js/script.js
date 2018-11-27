@@ -1,3 +1,6 @@
+// JS by Dan Høegh
+// UCN MMD 2018
+
 window.onload = function(){
 
 	// Add class "nav-active" to <body> when #menu-btn is clicked
