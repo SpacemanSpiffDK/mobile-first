@@ -359,6 +359,7 @@ nav li a {
 
     }
 
+	/* hover effect on nav item */
     nav li a:hover {
         background-color: rgba(0, 0, 0, .1);
     }
