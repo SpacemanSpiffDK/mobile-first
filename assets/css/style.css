@@ -132,10 +132,8 @@ footer p {
 	navigation for mobile
 	remember to reset all this for desktop
 */
-.nav-active #menu-btn {
-    opacity: 0;
-}
 
+/* navigation same size as viewport, move it to the left outside of screen */
 nav {
     position: fixed;
     top: 0;
@@ -149,11 +147,18 @@ nav {
     padding-top: 15vw;
 }
 
+/* let active navigation move back into screen */
 .nav-active nav {
     transform: translateX(0);
     opacity: 1;
 }
 
+/* hide menu button when navigation is active */
+.nav-active #menu-btn {
+    opacity: 0;
+}
+
+/* menu buttons */
 #menu-btn {
     transition: opacity .3s ease-out;
 }
@@ -189,6 +194,8 @@ nav {
     transform: translate(-50%,-50%);
 }
 
+/* pretty menu header for mobile nav */
+
 #menu-header {
     position: absolute;
     top: 0;
@@ -202,6 +209,8 @@ nav {
     text-transform: uppercase;
     color: #fff;
 }
+
+/* style for nav items */
 
 nav ul {
     margin: 0;
