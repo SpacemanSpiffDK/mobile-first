@@ -46,6 +46,11 @@ header {
     opacity: .5;
 }
 
+.grid-item {
+    position: relative;
+	display: block;
+}
+
 .background-image-cover {
     background-repeat: no-repeat;
     background-position: center center;
@@ -55,7 +60,6 @@ header {
 .name-hero {
     background-image: url(../images/2.jpg);
     height: 100vh;
-    position: relative;
 }
 
 .name-hero h1 {
@@ -83,29 +87,21 @@ header {
 .name-orbit {
     background-image: url(../images/1.jpg);
     height: 50vh;
-    position: relative;
 }
 
 .name-moon {
     background-image: url(../images/3.jpg);
     height: 50vh;
-    position: relative;
 }
 
 .name-mars {
     background-image: url(../images/4.jpg);
     height: 50vh;
-    position: relative;
 }
 
 .name-saturn {
     background-image: url(../images/5.jpg);
     height: 50vh;
-    position: relative;
-}
-
-.grid-item {
-	display: block;
 }
 
 footer {
@@ -247,24 +243,14 @@ nav li a {
 /* style for tablet (portrait) and upwards */
 @media screen and (min-width: 768px) {
     /* hide menu button on all other devices than mobile */
-    #menu-btn {
-        display: none;
-    }
+    #menu-btn { display: none; }
 
     /* make sure text-sizes don't explode on larger screens */
-    body {
-        font-size: 14px;
-    }
+    body { font-size: 14px; }
 
     /* make exceptions for headers */
-    h1 {
-        font-size: 4vw;
-    }
-
-    h2 {
-        font-size: 3vw;
-    }
-
+    h1 { font-size: 4vw; }
+    h2 { font-size: 3vw; }
 
     /* logo gets a fixed size from here on */
     #logo {
@@ -273,15 +259,12 @@ nav li a {
         font-size: 37.5px;
     }
 
-    #logo span {
-        bottom: -2px;
-    }
+    #logo span { bottom: -2px; }
 
     /* hero header moved to exact center */
-    .name-hero h1 {
-        transform: translate(-50%, -50%);
-    }
+    .name-hero h1 { transform: translate(-50%, -50%); }
 
+	/* new heights for my named grid items */
     .name-hero { height: 50vh; }
     .name-orbit { height: 50vh; }
     .name-moon { height: 25vh; }
@@ -297,15 +280,19 @@ nav li a {
             'orbit saturn mars';
     }
 
+	/*
+		Remove margin top for every .footer-layout-div 
+		who is preceeded by a .footer-layout-div
+	*/
     .footer-layout-div+.footer-layout-div {
         margin-top: 0;
         padding-left: 4vw;
     }
 
-    .footer-layout-div {
-        width: 50%;
-    }
+	/* change width of footer divs */
+    .footer-layout-div { width: 50%; }
 
+	/* make the two footer divs into a row */
     footer {
         display: flex;
     }
@@ -315,14 +302,20 @@ nav li a {
         padding: 200px 4vw 5vw 4vw;
     }
 
+	/* break text up into 2 columns */
     .text-block {
         column-count: 2;
     }
 
+	/* 
+		remove margin above first p element in text-block 
+		since it's going into columns now
+	*/
     .text-block p:first-child {
         margin-top: 0;
     }
 
+	/* make the h1 look prettier */
     .sub-page main h1 {
         margin: 2vw 0;
     }
@@ -341,6 +334,7 @@ nav li a {
         padding-top: 0;
     }
 
+	/* set navigation to be displayed as I wan't on non-mobile */
     nav ul {
         margin: 0;
         padding: 0;
@@ -364,6 +358,7 @@ nav li a {
         background-color: rgba(0, 0, 0, .1);
     }
 
+	/* hide mobile menu-stuff on non-mobile */
     #menu-btn-close,
     #menu-header {
         display: none;
