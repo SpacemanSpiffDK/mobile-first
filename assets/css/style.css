@@ -270,20 +270,8 @@ nav li a {
     .name-hero h1 { transform: translate(-50%, -50%); }
 
 	/* new heights for my named grid items */
-    .name-hero { height: 50vh; }
-    .name-orbit { height: 50vh; }
-    .name-moon { height: 25vh; }
-    .name-mars { height: 50vh; }
-    .name-saturn { height: 25vh; }
 
     /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero'
-            'orbit moon mars'
-            'orbit saturn mars';
-    }
 
 	/*
 		Remove margin top for every .footer-layout-div 
@@ -326,43 +314,10 @@ nav li a {
     }
 
     /* navigation for tablet and upwards */
-    nav {
-        position: fixed;
-        top: 0;
-        left: 150px;
-        transform: translateX(0);
-        width: calc(100vw - 150px);
-        height: auto;
-        background-color: #e74c3c;
-        transition: none;
-        opacity: 1;
-        padding-top: 0;
-    }
 
 	/* set navigation to be displayed as I want on non-mobile */
-    nav ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    nav li {
-        display: inline-block;
-        list-style-type: none;
-        border-bottom: none;
-    }
-
-    nav li a {
-        display: inline-block;
-        text-decoration: none;
-        color: #fff;
-        padding: 30px;
-
-    }
 
 	/* hover effect on nav item */
-    nav li a:hover {
-        background-color: rgba(0, 0, 0, .1);
-    }
 
 	/* hide mobile menu-stuff on non-mobile */
     #menu-btn-close,
