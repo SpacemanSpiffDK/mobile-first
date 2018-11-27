@@ -226,7 +226,6 @@ nav li a {
 }
 
 /* css grid naming */
-
 .name-hero { grid-area: hero; }
 .name-orbit { grid-area: orbit; }
 .name-moon { grid-area: moon; }
@@ -283,7 +282,7 @@ nav li a {
         transform: translate(-50%, -50%);
     }
 
-    .name-hero { height: 75vh; }
+    .name-hero { height: 50vh; }
     .name-orbit { height: 50vh; }
     .name-moon { height: 25vh; }
     .name-mars { height: 50vh; }
