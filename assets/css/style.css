@@ -373,22 +373,10 @@ nav li a {
 /* style for tablet (landscape) and upwards */
 @media screen and (min-width: 1024px) {
     /* new height for all grid-items */
-    .grid-item {
-        height: 25vh;
-    }
 
     /* new height for the hero grid-item */
-    .grid-item.name-hero {
-        height: 75vh;
-    }
 
     /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero hero'
-            'orbit moon mars saturn';
-    }
 
     /* some resizing of the grid h2s */
     .grid-item h2 {
@@ -405,23 +393,10 @@ nav li a {
 /* styles for medium sized screens and upwards */
 @media screen and (min-width: 1200px) {
     /* new height for all grid-items */
-    .grid-item {
-        height: 33.3333vh;
-    }
 
     /* new height for the hero grid-item */
-    .grid-item.name-hero {
-        height: 66.6666vh;
-    }
 
     /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero orbit'
-            'hero hero hero moon'
-            'mars mars saturn saturn';
-    }
 
     /* some style for the sub-page */
     .text-block {
@@ -432,28 +407,10 @@ nav li a {
 /* styles for large sized screens and upwards */
 @media screen and (min-width: 1600px) {
 	/* set a max size for content */
-    .site-width {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
 
     /* new height for all grid-items */
-    .grid-item {
-        height: 25vh;
-    }
 
     /* new height for the hero grid-item */
-    .grid-item.name-hero {
-        height: 100vh;
-    }
 
     /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero orbit'
-            'hero hero hero moon'
-            'hero hero hero mars'
-            'hero hero hero saturn'
-    }
 }
