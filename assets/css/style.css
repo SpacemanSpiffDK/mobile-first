@@ -291,11 +291,6 @@ nav li a {
         padding: 200px 4vw 5vw 4vw;
     }
 
-	/* break text up into 2 columns */
-    .text-block {
-        column-count: 2;
-    }
-
 	/* 
 		remove margin above first p element in text-block 
 		since it's going into columns now
@@ -319,6 +314,11 @@ nav li a {
     #menu-btn-close,
     #menu-header {
         display: none;
+    }
+
+	/* break text up into 2 columns */
+    .text-block {
+        column-count: 2;
     }
 }
 
