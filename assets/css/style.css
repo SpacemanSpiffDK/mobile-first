@@ -266,25 +266,6 @@ nav li a {
 
     #logo span { bottom: -2px; }
 
-    /* hero header moved to exact center */
-    .name-hero h1 { transform: translate(-50%, -50%); }
-
-	/* new heights for my named grid items */
-    .name-hero { height: 50vh; }
-    .name-orbit { height: 50vh; }
-    .name-moon { height: 25vh; }
-    .name-mars { height: 50vh; }
-    .name-saturn { height: 25vh; }
-
-    /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero'
-            'orbit moon mars'
-            'orbit saturn mars';
-    }
-
 	/*
 		Remove margin top for every .footer-layout-div 
 		who is preceeded by a .footer-layout-div
@@ -307,19 +288,6 @@ nav li a {
         padding: 200px 4vw 5vw 4vw;
     }
 
-	/* break text up into 2 columns */
-    .text-block {
-        column-count: 2;
-    }
-
-	/* 
-		remove margin above first p element in text-block 
-		since it's going into columns now
-	*/
-    .text-block p:first-child {
-        margin-top: 0;
-    }
-
 	/* make the h1 look prettier */
     .sub-page main h1 {
         margin: 2vw 0;
@@ -339,7 +307,7 @@ nav li a {
         padding-top: 0;
     }
 
-	/* set navigation to be displayed as I wan't on non-mobile */
+	/* set navigation to be displayed as I want on non-mobile */
     nav ul {
         margin: 0;
         padding: 0;
@@ -372,87 +340,15 @@ nav li a {
 
 /* style for tablet (landscape) and upwards */
 @media screen and (min-width: 1024px) {
-    /* new height for all grid-items */
-    .grid-item {
-        height: 25vh;
-    }
 
-    /* new height for the hero grid-item */
-    .grid-item.name-hero {
-        height: 75vh;
-    }
-
-    /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero hero'
-            'orbit moon mars saturn';
-    }
-
-    /* some resizing of the grid h2s */
-    .grid-item h2 {
-        font-size: 2vw;
-        padding: 2vw 4vw;
-    }
-
-    /* some style for the sub-page */
-    .text-block {
-        column-count: 3;
-    }
 }
 
 /* styles for medium sized screens and upwards */
 @media screen and (min-width: 1200px) {
-    /* new height for all grid-items */
-    .grid-item {
-        height: 33.3333vh;
-    }
 
-    /* new height for the hero grid-item */
-    .grid-item.name-hero {
-        height: 66.6666vh;
-    }
-
-    /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero orbit'
-            'hero hero hero moon'
-            'mars mars saturn saturn';
-    }
-
-    /* some style for the sub-page */
-    .text-block {
-        column-count: 4;
-    }
 }
 
 /* styles for large sized screens and upwards */
 @media screen and (min-width: 1600px) {
-    .site-width {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
 
-    /* new height for all grid-items */
-    .grid-item {
-        height: 25vh;
-    }
-
-    /* new height for the hero grid-item */
-    .grid-item.name-hero {
-        height: 100vh;
-    }
-
-    /* switch positions in grid */
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            'hero hero hero orbit'
-            'hero hero hero moon'
-            'hero hero hero mars'
-            'hero hero hero saturn'
-    }
 }
