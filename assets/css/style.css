@@ -104,26 +104,6 @@ header {
     position: relative;
 }
 
-.name-hero {
-    grid-area: hero;
-}
-
-.name-orbit {
-    grid-area: orbit;
-}
-
-.name-moon {
-    grid-area: moon;
-}
-
-.name-mars {
-    grid-area: mars;
-}
-
-.name-saturn {
-    grid-area: saturn;
-}
-
 footer {
     background-color: #e74c3c;
     color: #fff;
@@ -146,12 +126,10 @@ footer h4 {
     margin-top: 20px;
 }
 
-
 /* 
 	navigation for mobile
 	remember to reset all this for desktop
 */
-
 .nav-active #menu-btn {
     opacity: 0;
 }
@@ -243,7 +221,27 @@ nav li a {
     margin: 2vw 0;
 }
 
-/* style for tablet (portrait) */
+/* css grid naming */
+
+.name-hero { grid-area: hero; }
+.name-orbit { grid-area: orbit; }
+.name-moon { grid-area: moon; }
+.name-mars { grid-area: mars; }
+.name-saturn { grid-area: saturn; }
+
+/* switch positions in grid */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'hero'
+        'orbit'
+        'moon'
+        'mars'
+        'saturn';
+}
+
+
+/* style for tablet (portrait) and upwards */
 @media screen and (min-width: 768px) {
     /* hide menu button on all other devices than mobile */
     #menu-btn {
@@ -281,26 +279,11 @@ nav li a {
         transform: translate(-50%, -50%);
     }
 
-    .name-hero {
-        height: 75vh;
-    }
-
-    .name-orbit {
-        height: 50vh;
-    }
-
-    .name-moon {
-        height: 25vh;
-    }
-
-    .name-mars {
-        height: 50vh;
-    }
-
-    .name-saturn {
-        height: 25vh;
-    }
-
+    .name-hero { height: 75vh; }
+    .name-orbit { height: 50vh; }
+    .name-moon { height: 25vh; }
+    .name-mars { height: 50vh; }
+    .name-saturn { height: 25vh; }
 
     /* switch positions in grid */
     .grid-container {
@@ -384,7 +367,7 @@ nav li a {
     }
 }
 
-/* style for tablet (landscape) */
+/* style for tablet (landscape) and upwards */
 @media screen and (min-width: 1024px) {
     /* new height for all grid-items */
     .grid-item {
@@ -416,7 +399,7 @@ nav li a {
     }
 }
 
-/* styles for medium sized screens */
+/* styles for medium sized screens and upwards */
 @media screen and (min-width: 1200px) {
     /* new height for all grid-items */
     .grid-item {
@@ -443,7 +426,7 @@ nav li a {
     }
 }
 
-/* styles for large sized screens */
+/* styles for large sized screens and upwards */
 @media screen and (min-width: 1600px) {
     .site-width {
         max-width: 1600px;
