@@ -339,7 +339,7 @@ nav li a {
         padding-top: 0;
     }
 
-	/* set navigation to be displayed as I wan't on non-mobile */
+	/* set navigation to be displayed as I want on non-mobile */
     nav ul {
         margin: 0;
         padding: 0;
@@ -431,6 +431,7 @@ nav li a {
 
 /* styles for large sized screens and upwards */
 @media screen and (min-width: 1600px) {
+	/* set a max size for content */
     .site-width {
         max-width: 1600px;
         margin: 0 auto;
