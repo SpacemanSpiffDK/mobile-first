@@ -245,7 +245,6 @@ nav li a {
 /* style for tablet (portrait) and upwards */
 @media screen and (min-width: 768px) {
     /* hide menu button on all other devices than mobile */
-    #menu-btn { display: none; }
 
     /* make sure text-sizes don't explode on larger screens */
     body { font-size: 14px; }
