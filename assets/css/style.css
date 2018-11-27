@@ -51,10 +51,6 @@ header {
     opacity: .5;
 }
 
-.grid-item {
-    position: relative;
-	display: block;
-}
 
 .background-image-cover {
     background-repeat: no-repeat;
@@ -62,10 +58,6 @@ header {
     background-size: cover;
 }
 
-.name-hero {
-    background-image: url(../images/2.jpg);
-    height: 100vh;
-}
 
 .name-hero h1 {
     position: absolute;
@@ -89,25 +81,21 @@ header {
     text-transform: uppercase;
 }
 
-.name-orbit {
-    background-image: url(../images/1.jpg);
+.grid-item {
+    position: relative;
+	display: block;
     height: 50vh;
 }
 
-.name-moon {
-    background-image: url(../images/3.jpg);
-    height: 50vh;
+.name-hero { 
+	background-image: url(../images/2.jpg);
+    height: 100vh;
 }
 
-.name-mars {
-    background-image: url(../images/4.jpg);
-    height: 50vh;
-}
-
-.name-saturn {
-    background-image: url(../images/5.jpg);
-    height: 50vh;
-}
+.name-orbit { background-image: url(../images/1.jpg); }
+.name-moon { background-image: url(../images/3.jpg); }
+.name-mars { background-image: url(../images/4.jpg); }
+.name-saturn { background-image: url(../images/5.jpg); }
 
 footer {
     background-color: #e74c3c;
@@ -258,7 +246,6 @@ nav li a {
         'mars'
         'saturn';
 }
-
 
 /* style for tablet (portrait) and upwards */
 @media screen and (min-width: 768px) {
