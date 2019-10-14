@@ -355,6 +355,10 @@ nav li a {
         padding: 30px;
 
     }
+    /* add some margin to top of main to make room for nav bar */
+    main {
+        margin-top: 70px;
+    }
 
 	/* hover effect on nav item */
     nav li a:hover {
@@ -434,11 +438,6 @@ nav li a {
 
 /* styles for large sized screens and upwards */
 @media screen and (min-width: 1600px) {
-	/* set a max size for content */
-    .site-width {
-        max-width: 1600px;
-        margin: 0 auto;
-    }
 
     /* new height for all grid-items */
     .grid-item {
