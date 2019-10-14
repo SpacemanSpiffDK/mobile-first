@@ -92,8 +92,8 @@ header {
     height: 100vh;
 }
 
-.name-orbit { background-image: url(../images/1.jpg); }
-.name-moon { background-image: url(../images/3.jpg); }
+.name-orbit { background-image: url(../images/3.jpg); }
+.name-moon { background-image: url(../images/1.jpg); }
 .name-mars { background-image: url(../images/4.jpg); }
 .name-saturn { background-image: url(../images/5.jpg); }
 
