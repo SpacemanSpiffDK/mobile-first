@@ -151,6 +151,11 @@ nav {
     transition: opacity .3s ease-out;
 }
 
+/* menu buttons */
+#menu-btn {
+    transition: opacity .3s ease-out;
+}
+
 #menu-btn,
 #menu-btn-close {
     position: fixed;
