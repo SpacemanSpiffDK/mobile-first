@@ -125,19 +125,19 @@ footer p {
 nav {
     position: fixed;
     top: 0;
-    left: 0;
-    transform: translateX(-100%);
+    right: 120vw;
+    transform: translateX(0);
     width: 100vw;
     height: 100vh;
     background-color: #e74c3c;
     transition: all .3s ease-out;
-    opacity: .5;
+    opacity: .1;
     padding-top: 15vw;
 }
 
 /* let active navigation move back into screen */
 .nav-active nav {
-    transform: translateX(0);
+    transform: translateX(120%);
     opacity: 1;
 }
 
